@@ -78,7 +78,7 @@ figcaption {
     
     float: left;
     padding: 10px;
-    height: 200px;
+    height: 400px;
     margin-bottom: 20px;
   }
   /*this is setting the left column so it is smaller in width than the right*/
@@ -103,9 +103,35 @@ figcaption {
     display: table;
     clear: both;
   }
+  #about-me .column {
+    height: 150px;
+    
+  }
   #about-me p{ 
     text-align: center;
+   }
+/* this is making the work colums larger than the other */
+   #work .column{
+    height: 600px;
+   }
+/* this is the contact me links styling */
+   #contact-me .column{
+    height: 150px;
+   }
+   #contact-me a{
+    color: black;
+    margin: 25px;
+    text-align: center;
+    font-size: 25px;
     }
+
+   #contact-me li {
+    display: inline;
+    
+    
+    
+    
+}
 /* these media querys are making so the colums stack on each other when shrunk and the nav gets a black backgrtound and goes under the header */
   @media screen and (max-width: 600px) {
     .column {
