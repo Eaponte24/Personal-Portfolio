@@ -111,6 +111,7 @@ figcaption {
     
   }
   #about-me p{ 
+    
     text-align: center;
     line-height: 1.5;
     font-weight: bold;
@@ -150,6 +151,7 @@ figcaption {
   @media screen and (max-width: 600px) {
     .column {
       width: 100%;
+      padding: 0;
     }
     .header {
         width: 200%;
@@ -162,6 +164,15 @@ figcaption {
       top: 10px;
       bottom: 10px;
       }
+      #about-me p{ 
+       width: 100%;
+       position: relative;
+       bottom: 90px;
+       font-size: 80%;
+       margin-bottom: 100%;
+       
+       
+       }
 }
 @media screen and (max-width: 990px)  {
 nav {
