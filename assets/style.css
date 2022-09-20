@@ -23,7 +23,7 @@ body {
     }
 
 header {
-    background-color: black;
+    background-color: var(--dark);
     height: 110px;
 }
 /*nav styling begins */
@@ -85,7 +85,7 @@ figcaption {
   .left {
     
     width: 25%;
-    border-right: 5px solid black;
+    border-right: 5px solid var(--dark);
     font-size: 40px;
     padding: 50px;
 
@@ -103,12 +103,18 @@ figcaption {
     display: table;
     clear: both;
   }
+  main{
+    color: var(--dark);
+  }
   #about-me .column {
     height: 150px;
     
   }
   #about-me p{ 
     text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+    margin: 10px;
    }
 /* this is making the work colums larger than the other */
    #work .column{
@@ -118,20 +124,28 @@ figcaption {
    #contact-me .column{
     height: 150px;
    }
-   #contact-me a{
-    color: black;
-    margin: 25px;
-    text-align: center;
-    font-size: 25px;
-    }
-
    #contact-me li {
     display: inline;
-    
-    
-    
-    
-}
+    position: relative;
+    top: 50px;
+    left: 100px;
+    margin: 90px;
+    padding: 30px;
+    }
+
+   #contact-me a{
+    color: var(--dark);
+    margin: 25px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    }
+    #contact-me a:hover {
+      color: white;
+      text-decoration: none;
+     }
+
+
 /* these media querys are making so the colums stack on each other when shrunk and the nav gets a black backgrtound and goes under the header */
   @media screen and (max-width: 600px) {
     .column {
@@ -140,11 +154,20 @@ figcaption {
     .header {
         width: 200%;
     }
+    #contact-me li{
+      display: block;
+      padding: 0;
+      width: 100%;
+      left: 10px;
+      top: 10px;
+      bottom: 10px;
+      }
 }
 @media screen and (max-width: 990px)  {
 nav {
         width: 100%;
-        background-color: black;
+        background-color: var(--dark);
         
      }
   }
+
