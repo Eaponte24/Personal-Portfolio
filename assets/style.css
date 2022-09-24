@@ -73,7 +73,124 @@ figcaption {
     right: 0;
     bottom: 600px;
     }
-/* here the margin is adding a break in the border lines on the page so they dont look attached */
+
+    h2{
+      text-align: right;
+      font-size: 50px;
+      color: var(--dark);
+      margin: 10px;
+      line-height: 1.5;
+    }
+    
+  .container-1, .container-2, .container-3 {
+    display: flex;
+   }
+   
+  .container-1 div, .container-2 div, .container-3 div {
+    padding: 10px;
+    margin: 10px; 
+    }
+
+  .box-1 {
+    flex: 1;
+    border-right: 3px #ccc solid;
+    }
+  .box-2 {
+    flex: 8;
+    }
+  
+    .box-2 p{ 
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+    margin: 10px;
+   }
+  
+   .box-3 {
+    flex: 1;
+    border-right: 3px #ccc solid;
+  }
+  
+  .box-4 {
+    flex: 8;
+  }
+  
+  .box-5 {
+    flex: 1;
+    border-right: 3px #ccc solid;
+  }
+  
+  .box-6 {
+    flex: 8;
+  }
+
+  .box-6 li {
+    display: inline-flex;
+    flex: wrap;
+    margin: 40px;
+    margin-right: 150px;
+    width: 20%;
+  }
+
+   .box-6 a{
+    color: var(--dark);
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    }
+    .box-6 a:hover {
+      color: white;
+      text-decoration: none;
+     }
+  
+
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     
+     @media screen and (max-width: 600px) {
+    .header {
+          width: 110%;
+      }
+      .container-3 li{
+        display: block;
+        padding: 0;
+        width: 100%;
+        left: 10px;
+        top: 10px;
+        bottom: 10px;
+        }
+      nav {
+          width: 100%;
+          background-color: var(--dark);
+           }
+       
+  }
+  @media screen and (max-width: 990px)  {
+  nav {
+          width: 100%;
+          background-color: var(--dark);
+           }
+         
+   }
+
+
+    
+    
+  
+    
+    
+    
+    
+    
+    /*Note all this CSS out */
+/* here the margin is adding a break in the border lines on the page so they dont look attached 
 .column  {
     
     float: left;
@@ -81,7 +198,7 @@ figcaption {
     height: 400px;
     margin-bottom: 20px;
   }
-  /*this is setting the left column so it is smaller in width than the right*/
+  
   .left {
     
     width: 25%;
@@ -91,13 +208,13 @@ figcaption {
 
     
   }
-  /*this is setting the right column so it is bigger in width than the left*/
+  
   .right {
     
     width: 75%;
     
     }
-  /* Clear floats after the columns */
+  
   .row:after {
     content: "";
     display: table;
@@ -117,11 +234,11 @@ figcaption {
     font-weight: bold;
     margin: 10px;
    }
-/* this is making the work colums larger than the other */
+
    #work .column{
     height: 600px;
    }
-/* this is the contact me links styling */
+
    #contact-me .column{
     height: 150px;
    }
@@ -147,7 +264,6 @@ figcaption {
      }
 
 
-/* these media querys are making so the colums stack on each other when shrunk and the nav gets a black backgrtound and goes under the header */
   @media screen and (max-width: 600px) {
     .column {
       width: 100%;
@@ -180,5 +296,16 @@ nav {
         background-color: var(--dark);
         
      }
+     
+     #about-me p{ 
+      width: 100%;
+      position: relative;
+      bottom: 30px;
+      font-size: 80%;
+      margin-bottom: 100%;
+      
+      
+      }
   }
 
+*/
