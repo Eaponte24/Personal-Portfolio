@@ -8,7 +8,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-  
+font-family: sans-serif;  
 }
 
 body {
@@ -19,8 +19,8 @@ body {
     display: inline-block;
     font-size: 60px;
     color: var(--light);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 20px 60px 0 ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 
 header {
@@ -66,7 +66,7 @@ a {
 /*caption on the hero image */
 figcaption {
     background-color: black;
-    color: white;
+    color: var(--light);
     font-style: italic;
     padding: 2px;
     text-align: center;
@@ -75,9 +75,7 @@ figcaption {
     bottom: 600px;
     }
 
-  
-
-    h2{
+h2{
       text-align: right;
       font-size: 50px;
       color: var(--dark);
@@ -85,24 +83,30 @@ figcaption {
       line-height: 1.5;
     }
     
-  .container-1, .container-2, .container-3 {
+.container-1, .container-2, .container-3 {
     display: flex;
    }
+
+.container-2{
+  display: flex;  
+}
    
-  .container-1 div, .container-2 div, .container-3 div {
+.container-1 div, .container-2 div, .container-3 div {
     padding: 10px;
     margin: 10px; 
     }
 
-  .box-1 {
+.box-1 {
     flex: 1;
     border-right: 3px #ccc solid;
     }
-  .box-2 {
+
+.box-2 {
     flex: 4;
+
     }
-  
-  .box-2 p{ 
+
+.box-2 p{ 
     text-align: center;
     line-height: 1.5;
     font-weight: bold;
@@ -110,25 +114,27 @@ figcaption {
     color: var(--dark);
    }
   
-   .box-3 {
+.box-3 {
     flex: 1;
     border-right: 3px #ccc solid;
   }
   
-  .box-4 {
+.box-4 {
     flex: 4;
+    flex: wrap;
+    
   }
   
-  .box-5 {
+.box-5 {
     flex: 1;
     border-right: 3px #ccc solid;
   }
   
-  .box-6 {
+.box-6 {
     flex: 4;
   }
 
-  .box-6 li {
+.box-6 li {
     display: inline-flex;
     flex: wrap;
     margin: 40px;
@@ -136,17 +142,17 @@ figcaption {
     width: 20%;
   }
 
-   .box-6 a{
+.box-6 a{
     color: var(--dark);
     text-align: center;
     font-size: 30px;
     font-weight: bolder;
     }
-    .box-6 a:hover {
+.box-6 a:hover {
       text-decoration: none;
      }
      
-   .products {
+.products {
       flex: 2;
       display: flex;
       flex-wrap: wrap;
@@ -154,7 +160,7 @@ figcaption {
       align-items: flex-start;
    }
 
-    h3 {
+h3 {
       position: relative;
       bottom: 50px;
       background-color: var(--dark);
@@ -165,19 +171,19 @@ figcaption {
      
     }
 
-    .card {
+.card {
       border: 5px var(--dark) solid;
       margin: 5px;
       height: 310px;
       }
 
-  .card img {
+.card img {
       width: 800px;
       height: 300px;
       opacity: 70%;
     }
 
-    .card img:hover{
+.card img:hover{
       opacity: 100%;
       cursor: pointer;
     }
@@ -185,167 +191,55 @@ figcaption {
 
 
      
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     @media screen and (max-width: 600px) {
-    .header {
-          width: 110%;
-      }
-      .container-3 li{
-        display: block;
-        padding: 0;
-        width: 100%;
-        left: 10px;
-        top: 10px;
-        bottom: 10px;
-        }
-      nav {
+@media screen and (max-width: 1000px) {
+ 
+.header {
           width: 100%;
-          background-color: var(--dark);
-           }
-       
-  }
-  @media screen and (max-width: 990px)  {
-  nav {
-          width: 100%;
-          background-color: var(--dark);
-           }
-         
-   }
-
-
-    
-    
-  
-    
-    
-    
-    
-    
-    /*Note all this CSS out */
-/* here the margin is adding a break in the border lines on the page so they dont look attached 
-.column  {
-    
-    float: left;
-    padding: 10px;
-    height: 400px;
-    margin-bottom: 20px;
-  }
-  
-  .left {
-    
-    width: 25%;
-    border-right: 5px solid var(--dark);
-    font-size: 40px;
-    padding: 50px;
-
-    
-  }
-  
-  .right {
-    
-    width: 75%;
-    
-    }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  main{
-    color: var(--dark);
-  }
-  #about-me .column {
-    height: 150px;
-    
-  }
-  #about-me p{ 
-    
-    text-align: center;
-    line-height: 1.5;
-    font-weight: bold;
-    margin: 10px;
-   }
-
-   #work .column{
-    height: 600px;
-   }
-
-   #contact-me .column{
-    height: 150px;
-   }
-   #contact-me li {
-    display: inline;
-    position: relative;
-    top: 50px;
-    left: 100px;
-    margin: 90px;
-    padding: 30px;
-    }
-
-   #contact-me a{
-    color: var(--dark);
-    margin: 25px;
-    text-align: center;
-    font-size: 30px;
-    font-weight: bolder;
-    }
-    #contact-me a:hover {
-      color: white;
-      text-decoration: none;
-     }
-
-
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      padding: 0;
-    }
-    .header {
-        width: 110%;
-    }
-    #contact-me li{
-      display: block;
-      padding: 0;
-      width: 100%;
-      left: 10px;
-      top: 10px;
-      bottom: 10px;
       }
-      #about-me p{ 
-       width: 100%;
-       position: relative;
-       bottom: 90px;
-       font-size: 80%;
-       margin-bottom: 100%;
-       
-       
-       }
+
+h1 {
+  width: 100%;
+  margin-left: 0;
+  align-content: center;
 }
-@media screen and (max-width: 990px)  {
+
+h2 {
+  font-size: 180%;
+}
+
+h3 {
+  font-size: 100%;
+  width: 100%;
+  }
+
+  .box-1, .box-3, .box-5 {
+    border: none;
+  }
+
+
+.container-3 .box-5 {
+  padding: 10px;
+  width: 35%;
+}
+
+.container-3 li a{
+  font-size: 20px;
+        
+      }
+
 nav {
         width: 100%;
         background-color: var(--dark);
+        font-size: 20px;
+        margin-right: 0;
         
-     }
-     
-     #about-me p{ 
-      width: 100%;
-      position: relative;
-      bottom: 30px;
-      font-size: 80%;
-      margin-bottom: 100%;
-      
-      
       }
-  }
 
-*/
+.card img {
+    width: 100%;
+    left: 50px;
+    
+  }
+          
+  
+  
