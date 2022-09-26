@@ -1,7 +1,6 @@
 :root{
     --dark: rgb(15, 16, 17);
     --light: rgb(255, 255, 255);
-    
 }
 
 * {
@@ -82,7 +81,7 @@ h2{
       margin: 10px;
       line-height: 1.5;
     }
-    
+/* these are the image container style settings for these classes */
 #about-me, #work, #contact-me {
     display: flex;
    }
@@ -165,7 +164,6 @@ h3 {
      
     }
 
-
 #p-1, #p-2, #p-3, #p-4 {
       flex: 1;
       border: 5px var(--dark) solid;
@@ -189,9 +187,18 @@ h3 {
      
 @media screen and (max-width: 1000px) {
  
-.header {
-          width: 100%;
-      }
+.header h1{
+position: relative;
+margin: 0;
+left: 60px;
+}
+
+nav {
+  width: 100%;
+  background-color: var(--dark);
+  font-size: 20px;
+  margin-right: 0;
+}
 
 h1 {
   width: 100%;
@@ -208,9 +215,14 @@ h3 {
   width: 100%;
   }
 
-  .box-1, .box-3, .box-5 {
+.box-1, .box-3, .box-5 {
     border: none;
   }
+
+#p-1 img, #p-2 img, #p-3 img, #p-4 img {
+    width: 100%;
+    left: 50px;
+} 
 
 #contact-me .box-5 {
   padding: 10px;
@@ -218,18 +230,8 @@ h3 {
 }
 
 #contact-me li a{
-  font-size: 20px;
-  }
-
-nav {
-        width: 100%;
-        background-color: var(--dark);
-        font-size: 20px;
-        margin-right: 0;
-    }
-
-#p-1 img, #p-2 img, #p-3 img, #p-4 img {
-    width: 100%;
-    left: 50px;
+position: relative;
+left: 80px;
+font-size: 20px;
 } 
 } 

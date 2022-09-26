@@ -1,4 +1,4 @@
-# <Enriques Personal Portfolio>
+# Enriques Personal Portfolio
 
 ## Description
 
@@ -7,7 +7,7 @@ I created my personal portfolio website from scratch with no starter code whatso
 
 ## Usage
 
-In provided screenshots you will see the application at the regular size and the application when the web page is shrunk. I will also include screenshots on the HTML and the CSS. Also included in the screenshots will be the title table where you will see “Portfolio Home Page”.
+In provided screenshots you will see the application at the regular size and the application when the web page is shrunk. Also included in the screenshots will be the title table where you will see “Portfolio Home Page”.
 
 ![Portfolio fullsize](assets/Photos/personalport1.PNG)
 
