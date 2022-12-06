@@ -1,5 +1,11 @@
+
+
+
 #carouselExampleCaptions {
-  margin: 60px 350px;
+  margin: 60px 0px;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .25);
   border-radius: 20px;
 }
@@ -19,6 +25,7 @@ h1 {
   text-align: center;
   margin: 30px;
   font-size: 60px;
+  color: azure;
 }
 
 h2 {
@@ -31,8 +38,12 @@ h2 {
   z-index: -1;
   min-width: 100%;
   height: 100%;
-  translate: 0px -40px;
+  translate: 0px -30px;
   opacity: 70%;
+}
+
+.card {
+  margin: 20px;
 }
 
 
