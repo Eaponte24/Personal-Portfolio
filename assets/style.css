@@ -1,4 +1,63 @@
-:root{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
     --dark: rgb(15, 16, 17);
     --light: rgb(255, 255, 255);
 }
@@ -12,9 +71,9 @@
 
 body {
     background-color: var(--light);
-}
+} */
 /* header styling begins */
-.header h1 {
+/* .header h1 {
     display: inline-block;
     font-size: 60px;
     color: var(--light);
@@ -24,10 +83,10 @@ body {
 
 header {
     background-color: var(--dark);
-    height: 110px;
+    height: 110px; */
 }
 /*nav styling begins */
-nav {
+/* nav {
     display: flex;
     flex: wrap;
     padding-top: 15px;
@@ -36,9 +95,9 @@ nav {
     float: right;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 25px;
-   }
+   } */
 /*when hovering over links the overline bar now goes away */
-nav a:hover {
+/* nav a:hover {
     color: aliceblue;
     text-decoration: none;
    }
@@ -52,18 +111,18 @@ nav li {
 a {
     color: var(--light);
     text-decoration: overline;
-}
+} */
 /*Image right after header styling */
-.hero {
+/* .hero {
     height: 300px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../assets/Photos/hero\ image\ for\ now.jpg");
     background-size: cover;
     background-position: center;
-}
+} */
 /*caption on the hero image */
-figcaption {
+/* figcaption {
     background-color: black;
     color: var(--light);
     font-style: italic;
@@ -80,9 +139,9 @@ h2{
       color: var(--dark);
       margin: 10px;
       line-height: 1.5;
-    }
+    } */
 /* these are the image container style settings for these classes */
-#about-me, #work, #contact-me {
+/* #about-me, #work, #contact-me {
     display: flex;
    }
 
@@ -98,11 +157,11 @@ h2{
     }
 
 .box-2 {
-    flex: 4;
+    flex: 4; */
 
     }
 /* about me paragraphy styling */
-.box-2 p{ 
+/* .box-2 p{ 
     text-align: center;
     line-height: 2;
     font-weight: bold;
@@ -122,9 +181,9 @@ h2{
 .box-5 {
     flex: 1;
     border-right: 3px #ccc solid;
-  }
+  } */
 /* contact me links styling */
-.box-6 {
+/* .box-6 {
     display: flex;
     justify-content: center;
     flex: 4;
@@ -144,9 +203,9 @@ h2{
     }
 .box-6 a:hover {
       text-decoration: none;
-     }
+     } */
 /* here starts all the styling for the projects space */     
-.products {
+/* .products {
       flex: 1;
       display: flex;
       flex-wrap: wrap;
@@ -234,4 +293,4 @@ position: relative;
 left: 80px;
 font-size: 20px;
 } 
-} 
+}  */
