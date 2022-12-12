@@ -135,6 +135,17 @@ h3 {
   transform:translate(-50%, -50%);
 }
 
+#contactIcns {
+  color: #000000;
+  padding: 15px;
+}
+
+         
+#connections {
+  margin: 25%;
+}
+
+
 
 @keyframes slide {
   0% {
@@ -145,4 +156,30 @@ h3 {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .row {
+   width: 50%;
+   display: flex;
+  justify-content: center;
+   
+  }
+  
+  #connections {
+    margin: 2%;
+    padding: 5px;
+  }
+    }
+
+    @media screen and (max-width: 1500px) {
+     
+      
+      #connections {
+        
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+      }
+        }
+
+    
 
